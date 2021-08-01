@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="1. Esto es una pregunta"
+            android:layout_marginTop="30dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:fontFamily="@font/lato"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_clue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_question"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            tools:text="Esto es una pista terriblemente terrible, mu terrible, no te imaginas cuan terrible"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:fontFamily="@font/lato" />
+
+        <EditText
+            android:id="@+id/et_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:fontFamily="@font/lato"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/la_respuesta_es_no"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/button_clue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:nb_text="@string/get_clue"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_backgroundColor="@color/colorPrimary"
+            app:nb_focusColor="@color/colorPrimaryDark"
+            app:nb_textColor="#000000"
+            app:fontFamily="@font/lato"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            app:nb_radius="5dp"/>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/button_send"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:nb_text="@string/send"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:fontFamily="@font/lato"
+            app:nb_backgroundColor="@color/colorPrimary"
+            app:nb_focusColor="@color/colorPrimaryDark"
+            app:nb_textColor="#000000"
+            app:nb_radius="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
