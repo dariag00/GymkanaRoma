@@ -305,9 +305,17 @@ public class MainActivity extends AppCompatActivity {
         questions.add(question);
 
         question = new Question();
-        question.setQuestion("33 - Cuales eran las batallas más raras que se hicieron aqui?");
-        question.setClues(Arrays.asList("Me puedes preguntar por Nerón", "Tiene que ver con los liquidillos"));
-        question.setSolution("Batallas Navales");
+        question.setQuestion("33 - Que gran reliquia está guardada en una iglesia que hemos visto?");
+        question.setClues(Arrays.asList("Es San Pedro de no se que uwu", "EL nombre TIENE qwue ver", "Quizas prueba traduciendolo"));
+        question.setSolution("Cadenas de San pedro");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("33 - Que pone en la tumba del gran escultos que hemos visto estos dias, concretamente ayer?");
+        question.setClues(Arrays.asList("Primero habra que buscar donde está enterrado", "Es en una iglesia", "Los trenes pasan cerca", "El coliseo y san pietro in vincoli forman una linea"));
+        question.setSolution("IOANNES LAVRENTIVS BERNINI DECVS ARTIVM ET VRBIS HIC HVMILITER QVIESCIT");
+        question.setHasDialog(true);
+        question.setDialogContent("Bieeeen. Se terminó :(");
         questions.add(question);
 
 
