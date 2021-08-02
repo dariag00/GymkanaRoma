@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Gymkana Hotel</string>
+    <string name="app_name">Gymkana Roma</string>
     <string name="instrucciones">Instrucciones</string>
     <string name="instructions_read">instructions_read</string>
     <string name="current_question">current_question</string>
     <string name="la_respuesta_es_no">La respuesta es no</string>
     <string name="send">Enviar</string>
     <string name="get_clue">Obtener Pista</string>
-    <string name="final_string">Basicamente, no se me ocurria como contarte lo del ª XD y asi repasas un poco. Y wno, pues vamos a ir a un restaurante único en Europa. Un restaurante que fue estrella michelin y que es completamente vegano/vegetariano.</string>
+    <string name="final_string">Basicamente, no se me ocurria como contarte lo del ª XD y asi repasas un poco. Y wno, pues vamos a ir a un restaurante que es mega dificil de encontrar. Un restaurante que fue estrella michelin, con menu degustación, y que es completamente vegano/vegetariano.</string>
     <string name="final_title">Muchisimas felicidades terminando el reto!</string>
 </resources>

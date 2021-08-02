@@ -23,7 +23,7 @@ class IntroActivity : AppIntro() {
                 descriptionTypefaceFontRes = R.font.lato))
 
         addSlide(AppIntroFragment.newInstance(title = "Las preguntas",
-                description = "Cada pregunta  tiene una única solución correcta, la cual tendrás que introducir. Generalmente, hay dos tipos de preguntas: preguntas que sirven para desbloquear una pista (o algún lugar al que ir who knows) o una pregunta para desbloquear preguntas mas importantes.",
+                description = "Cada pregunta  tiene una única solución correcta, la cual tendrás que introducir.",
                 imageDrawable = R.drawable.acertijo,
                 backgroundDrawable = R.drawable.back_slide1,
                 titleTypefaceFontRes = R.font.lato,

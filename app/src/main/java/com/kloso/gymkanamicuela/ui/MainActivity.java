@@ -17,7 +17,6 @@ import com.kloso.gymkanamicuela.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -81,12 +80,49 @@ public class MainActivity extends AppCompatActivity {
         List<Question> questions = new ArrayList<>();
 
         //Hide the pain Harold
+
         Question question = new Question();
+        question.setQuestion("1- ¿Con que compañía vamos a Madrid?");
+        question.setClues(Arrays.asList(""));
+        question.setSolution("RenfeC");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("2- ¿A que hora sale nuestro vuelo?");
+        question.setClues(Arrays.asList(""));
+        question.setSolution("19:10");
+        question.setHasDialog(true);
+        question.setDialogContent("Para calentar un poco, antes de pasar a mis explicaciones, vamos a repasar algunas cosillas de Roma");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("3- ¿Cual es el código de nuestro vuelo?");
+        question.setClues(Arrays.asList(""));
+        question.setSolution("IB450");
+        question.setHasDialog(true);
+        question.setDialogContent("Para calentar un poco, antes de pasar a mis explicaciones, vamos a repasar algunas cosillas de Roma");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("4- ¿Cual es tu asiento?");
+        question.setClues(Arrays.asList(""));
+        question.setSolution("28B");
+        question.setHasDialog(true);
+        question.setDialogContent("Para calentar un poco, antes de pasar a mis explicaciones, vamos a repasar algunas cosillas de Roma");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("5- ¿Quien es el rey de los gatonsios, el gatonsio mas pesioso de todos?");
+        question.setClues(Arrays.asList("Mu pesioso", "Le quiero mucho", "Es que es mu lindu :("));
+        question.setSolution("Cliote");
+        question.setHasDialog(true);
+        question.setDialogContent("Cliote, el gatito más lindote y pesiosote, al que le encantan las sardinotas y jugar con las bolitas");
+        questions.add(question);
+
+        question = new Question();
         question.setQuestion("1- ¿En que año se fundó Roma?");
         question.setClues(Arrays.asList(""));
         question.setSolution("753 aC");
-        question.setHasDialog(true);
-        question.setDialogContent("Para calentar un poco, antes de pasar a mis explicaciones, vamos a repasar algunas cosillas de Roma");
         questions.add(question);
 
         question = new Question();
@@ -145,6 +181,22 @@ public class MainActivity extends AppCompatActivity {
 
         question = new Question();
         question.setQuestion("11- ¿Quien ordena a Lucio Voreno llevar unos dineros a lo nazi desde Ostia hasta Roma?");
+        question.setClues(Arrays.asList("Tito Pullo no es", "Salio mal y casi se cargan a los del voreno", "El personaje muere en la serie"));
+        question.setSolution("Marco Antonio");
+        question.setHasDialog(true);
+        question.setDialogContent("Ya que vamos pues asi repasamos. A partir de ahora las preguntas las podrás responder según vayamos viendo cosas de Roma");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("11- ¿Quien es mi personaje fav de Roma HBO?");
+        question.setClues(Arrays.asList("Tito Pullo no es", "Salio mal y casi se cargan a los del voreno", "El personaje muere en la serie"));
+        question.setSolution("Marco Antonio");
+        question.setHasDialog(true);
+        question.setDialogContent("Ya que vamos pues asi repasamos. A partir de ahora las preguntas las podrás responder según vayamos viendo cosas de Roma");
+        questions.add(question);
+
+        question = new Question();
+        question.setQuestion("11- ¿Cual es mi emperador fav?");
         question.setClues(Arrays.asList("Tito Pullo no es", "Salio mal y casi se cargan a los del voreno", "El personaje muere en la serie"));
         question.setSolution("Marco Antonio");
         question.setHasDialog(true);
@@ -311,14 +363,12 @@ public class MainActivity extends AppCompatActivity {
         questions.add(question);
 
         question = new Question();
-        question.setQuestion("33 - Que pone en la tumba del gran escultos que hemos visto estos dias, concretamente ayer?");
+        question.setQuestion("34 - Que pone en la tumba del gran escultos que hemos visto estos dias, concretamente ayer?");
         question.setClues(Arrays.asList("Primero habra que buscar donde está enterrado", "Es en una iglesia", "Los trenes pasan cerca", "El coliseo y san pietro in vincoli forman una linea"));
         question.setSolution("IOANNES LAVRENTIVS BERNINI DECVS ARTIVM ET VRBIS HIC HVMILITER QVIESCIT");
         question.setHasDialog(true);
-        question.setDialogContent("Bieeeen. Se terminó :(");
+        question.setDialogContent("Bieeeen. Ahora quizás habría que ponerse algo de gala");
         questions.add(question);
-
-
 
 
         return questions;
